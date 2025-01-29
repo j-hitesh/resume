@@ -164,13 +164,9 @@ body{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+    padding: 70px 10%;
 }
-.about-img img{
-    padding-bottom: 20%;
-    height: auto;
-    /* width: 100%; */
-    border-radius: 40%;
-}
+
 .about-text h2{
     font-size: 60px;
 }
@@ -212,7 +208,7 @@ body{
     grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
-  
+    margin-left: 70px;
 }
 .services-list div{
     background-color: transparent;
@@ -802,9 +798,14 @@ section{
 .home-content{
     margin-top: 5rem;
 }
+.home-content h1,.about-text h4{
+    font-size: 18px;
+    padding-bottom: 1rem;
+}
  .about{
     display:block;
-    padding: 0 3rem;
+    padding: 263px 3rem;
+    
  }
  
  .sub-title{
@@ -843,9 +844,11 @@ section{
     width: 100%;
     margin: 10px 0.5rem;
  }
-
+.last-text{
+    width: 76vh;
+}
  .top{
-    right: 6rem;
+    /* right: 6rem; */
     bottom: 8rem;
  }
 }
@@ -1125,17 +1128,8 @@ section{
         <p>Developed By Hitesh....</p>
     </div>
     <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
-
+     <script src="devolper.js"></script>
     <script src="resume.js" >
-      var typed = new Typed(".text",{
-    strings:["Frontend Developer", "Java Developer", "Web Developer"],
-    typeSpeed : 10,
-    backSpeed : 100,
-    backDelay : 1000,
-    loop : true
-});
-   
-
     </script>
 </body>
 </html>
