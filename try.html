@@ -72,9 +72,9 @@ body{
     display: none;
 }
 .home{
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     width: 100%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     height: 100vh;
     /* display: flex; */
     align-items: center;
@@ -743,48 +743,95 @@ section{
  body{
     overflow-x: hidden;
  }
+
+ .header{
+    height: 10vh;
+ }
+ .header .logo{
+    font-size: 24px;
+ }
   .header button{
     display: contents;
+    font-size: 24px;
   }
  .logo,.navbar a{
     font-size: 12px;
     
  } 
  #navbar{
-    position: fixed;
-    top: 0;
+    position: relative;
+    top: 14vh;
+    padding-top: 2rem;
     right: -100%;
-    height: 100vh;
-    width: min(15em, 100%);
+    height: 25vh;
+    width: 80vh;
     z-index: 10;
-    border-left: 1px solid var(--hover-color);
+    background-color: #00eeff;
+    border-radius: 10px;
+    box-shadow: 4 3 3 3 rgba(0, 28, 100, 0.1);
     transition: right 300ms ease-in-out;
+    margin: 0 -70px;
  }
  #navbar.show{
-    right: 0;
+    right: 5%;
  }
  #navbar.show ~ #overlay{
     display: block;
  }
  .navbar{
-    width: 100%;
     flex-direction: column;
  }
  .navbar li{
     display: block;
     text-align: center;
-    padding: 0.2rem 0;
+    padding: 0.4rem 0;
  } 
  .navbar li a{
     width: 100%;
     padding-left: 2.5em;
+    font-size: 30px;
+    transition: all 0.2s;
  }
-
- /* .home{
-    width:100px ;
-    padding:1px;
- } */
+ .navbar li a:hover{
+    color: #000;
+ }
+.home{
+    width: auto;
+    height: 50vh;
+}
+.home-content{
+    margin-top: 5rem;
+}
+ .about{
+    display:block;
+    padding: 0 3rem;
+ }
  
+ .sub-title{
+    padding-bottom: 10px;
+ }
+ .container1{
+    padding: 40px 5px;
+    margin-bottom: 4rem;
+ }
+ .main-text{
+    margin-top: 1rem;
+    padding-top: 1rem;
+ }
+ .portfolio-content{
+    display: block;
+ }
+ .contact{
+    display: block;
+    margin-top: 30px;
+ }
+ .contact-text h4{
+    text-align: center;
+ }
+ .top{
+    right: 6rem;
+    bottom: 8rem;
+ }
 }
 
  </style>
@@ -839,7 +886,7 @@ section{
             <h2>About <span>Me</span></h2>
             <h4>Full Stack Developer!</h4>
             <p>
-                I'm Hitesh Jangid & I'm from Gangapur City. I'm an engineering graduate from EIC College specialized in Electrical Engineering. I've worked hard in my education & maintained a CGPA of 7.65.
+                I'm Hitesh Jangid & I'm from Gangapur City. I'm an engineering graduate from ECA College specialized in Electrical Engineering. I've worked hard in my education & maintained a CGPA of 7.65.
                 Along with my degree I've completed Java, SQL and Full Stack Courses online.Now I'm ready to apply my knowledge into practice.Though I do not have any real life working experience, I've  had a lot of exposure to the software field.
                 My Goal is to build a successfull career as a Full Stack Developer.Moving forward in my career I hope to expand my experience across different industries.
                 I'm a good learner and team player
